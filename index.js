@@ -29,14 +29,14 @@ form.addEventListener('submit', (event) => {
   const averageMark = (mark1 + mark2 + mark3 + mark4 + mark5) / 5;
 
   if (averageMark === 5) {
-    excellentCount++;
-  }
+    excellentCount++;}
    else if(mark1 === 2 || mark2 === 2 || mark3 === 2 || mark4 === 2 || mark5 === 2)  {
     unsuccessfulCount++;
-    unsuccessfulStudents.push(surname);
-   }else if (averageMark >= 4 ) {
+    unsuccessfulStudents.push(surname); }
+   else if (averageMark >= 4 ) {
     goodCount++;
   }
+
     
   
 
