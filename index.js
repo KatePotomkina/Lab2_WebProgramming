@@ -30,12 +30,14 @@ form.addEventListener('submit', (event) => {
 
   if (averageMark === 5) {
     excellentCount++;
-  } else if (averageMark >= 4 &&(mark1 !== 2 || mark2 !== 2 || mark3 !== 2 || mark4 !== 2 || mark5 !== 2)) {
-    goodCount++;
-  } else  {
-    unsuccessfulCount++;
-    unsuccessfulStudents.push(surname);
   }
+   else if(mark1 === 2 || mark2 === 2 || mark3 === 2 || mark4 === 2 || mark5 === 2)  {
+    unsuccessfulCount++;
+   }else if (averageMark >= 4 ) {
+    goodCount++;
+  }
+    unsuccessfulStudents.push(surname);
+  
 
   excellentSpan.textContent = excellentCount;
   goodSpan.textContent = goodCount;
